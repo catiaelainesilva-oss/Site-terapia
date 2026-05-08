@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#e1b5a6",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#2d150c",
+                    "on-secondary-fixed": "#1f1c00",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f1f0ef",
+                    "surface-container-high": "#e9e8e7",
+                    "outline-variant": "#c1c8c6",
+                    "surface-variant": "#e3e2e1",
+                    "on-primary-container": "#a7c6c3",
+                    "on-surface-variant": "#414847",
+                    "on-surface": "#1a1c1c",
+                    "surface-container": "#eeeeed",
+                    "inverse-primary": "#aecdca",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#ffdbce",
+                    "on-secondary-fixed-variant": "#4c4817",
+                    "surface-dim": "#dadad9",
+                    "on-primary-fixed": "#02201e",
+                    "surface-tint": "#476461",
+                    "surface-container-highest": "#e3e2e1",
+                    "secondary-fixed": "#ece5a4",
+                    "on-primary": "#ffffff",
+                    "primary": "#203c3a",
+                    "surface": "#faf9f8",
+                    "on-background": "#1a1c1c",
+                    "secondary-container": "#e9e2a1",
+                    "primary-fixed-dim": "#aecdca",
+                    "tertiary-fixed-dim": "#e9bdad",
+                    "tertiary-container": "#66463a",
+                    "on-primary-fixed-variant": "#304c4a",
+                    "surface-bright": "#faf9f8",
+                    "inverse-surface": "#2f3130",
+                    "primary-fixed": "#cae9e6",
+                    "primary-container": "#375351",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#4d3025",
+                    "surface-container-low": "#f4f3f2",
+                    "on-tertiary-fixed-variant": "#5e3f34",
+                    "background": "#faf9f8",
+                    "outline": "#717877",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "secondary": "#64602c",
+                    "secondary-fixed-dim": "#cfc98a",
+                    "on-secondary-container": "#696430",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "section-padding": "80px",
+                    "gutter": "24px",
+                    "container-max": "1120px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Manrope"],
+                    "headline-md": ["EB Garamond"],
+                    "body-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "headline-sm": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.1", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        ::selection {
+            background-color: #cae9e6;
+            color: #203c3a;
+        }
+        .clinical-textarea:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-hidden">
+<!-- Sidebar (Shared Component: SideNavBar) -->
+<aside class="fixed left-0 top-0 h-full flex flex-col py-8 px-4 bg-surface-container-low border-r border-outline-variant w-64 z-50">
+<div class="mb-12 px-2">
+<h1 class="font-headline-md text-headline-md text-primary">Cátia Silva</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">Psychoanalyst</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-primary font-bold border-l-4 border-primary bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">edit_note</span>
+<span class="font-body-md text-body-md">Session Notes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">person_search</span>
+<span class="font-body-md text-body-md">Patient Record</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="font-body-md text-body-md">Dream Analysis</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">psychiatry</span>
+<span class="font-body-md text-body-md">Bach Flowers</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-body-md text-body-md">Analytics</span>
+</a>
+</nav>
+<div class="mt-auto space-y-1 pt-8 border-t border-outline-variant">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-body-md text-body-md">Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Execution Context -->
+<main class="ml-64 h-screen flex flex-col bg-surface relative">
+<!-- Header: TopAppBar Implementation -->
+<header class="w-full h-20 flex justify-between items-center px-10 border-b border-outline-variant/30 bg-surface/80 backdrop-blur-md sticky top-0 z-40">
+<div class="flex items-center gap-6">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Helena Costa</h2>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Sessão em Curso: 42:15</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-4 text-on-surface-variant border-r border-outline-variant pr-6">
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">history</span></button>
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">notifications</span></button>
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">lock</span></button>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded font-label-caps text-label-caps hover:bg-primary-container transition-all">
+                    Finalizar Sessão
+                </button>
+</div>
+</header>
+<div class="flex-1 flex overflow-hidden">
+<!-- Central Note Area: Clinical Notes -->
+<section class="flex-1 flex flex-col overflow-hidden px-10 pt-8 max-w-4xl mx-auto w-full">
+<!-- Previous Context Collapsible -->
+<div class="mb-8 bg-surface-container-low rounded-xl border border-outline-variant/50 overflow-hidden">
+<button class="w-full flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors">
+<span class="font-label-caps text-label-caps text-primary">Contexto da Sessão Anterior (12 Out)</span>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</button>
+<div class="p-6 pt-0 text-on-surface-variant text-body-md border-t border-outline-variant/30">
+<p class="mb-2 italic">"Foco na relação com a figura materna e mecanismos de resistência ao abordar traumas de infância."</p>
+<ul class="list-disc list-inside text-sm opacity-80 space-y-1">
+<li>Fio condutor: O silêncio punitivo.</li>
+<li>Tópico em aberto: O sonho com a casa de vidro.</li>
+</ul>
+</div>
+</div>
+<!-- Main Transcription Area -->
+<div class="flex-1 flex flex-col mb-10">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">notes</span>
+                        Notas Clínicas em Tempo Real
+                    </label>
+<textarea class="flex-1 w-full clinical-textarea bg-transparent border-none p-0 text-lg leading-relaxed font-body-md text-on-surface placeholder-on-surface-variant/30 resize-none no-scrollbar" placeholder="Inicie a transcrição ou anotação livre aqui... Helena parece mais contida hoje, evitando contato visual ao mencionar o trabalho."></textarea>
+</div>
+</section>
+<!-- Quick Insights Bar: Sidebar Implementation -->
+<aside class="w-96 border-l border-outline-variant/30 bg-surface-container-lowest p-8 overflow-y-auto no-scrollbar">
+<div class="space-y-10">
+<!-- Key Tokens -->
+<div>
+<h3 class="font-label-caps text-label-caps text-primary mb-4 flex items-center justify-between">
+                            Tokens de Sessão
+                            <span class="material-symbols-outlined text-sm cursor-pointer">add_circle</span>
+</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/20 cursor-pointer hover:bg-primary/20">Figura Materna</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/20 cursor-pointer hover:bg-primary/20">Transferência</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/20 cursor-pointer hover:bg-primary/20">Resistência</span>
+<span class="px-3 py-1 bg-surface-container border border-outline-variant text-on-surface-variant text-xs rounded-full cursor-pointer hover:border-primary">Ambivalência</span>
+</div>
+</div>
+<!-- Dream Log -->
+<div>
+<h3 class="font-label-caps text-label-caps text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">bedtime</span>
+                            Registro de Sonhos
+                        </h3>
+<input class="w-full bg-surface border-b border-outline-variant py-2 focus:border-primary text-sm focus:ring-0 transition-all placeholder:text-on-surface-variant/40" placeholder="Descreva o sonho brevemente..." type="text"/>
+</div>
+<!-- Indicators Sliders -->
+<div>
+<h3 class="font-label-caps text-label-caps text-primary mb-6">Indicadores Clínicos</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between text-xs mb-2">
+<span class="text-on-surface-variant">Ansiedade</span>
+<span class="font-bold text-primary">Moderada</span>
+</div>
+<div class="h-1 bg-surface-container relative rounded-full">
+<div class="absolute left-0 top-0 h-full w-[65%] bg-primary"></div>
+<div class="absolute left-[65%] top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full shadow-sm cursor-pointer"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-2">
+<span class="text-on-surface-variant">Conexão / Aliança</span>
+<span class="font-bold text-primary">Forte</span>
+</div>
+<div class="h-1 bg-surface-container relative rounded-full">
+<div class="absolute left-0 top-0 h-full w-[85%] bg-primary"></div>
+<div class="absolute left-[85%] top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full shadow-sm cursor-pointer"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-2">
+<span class="text-on-surface-variant">Insight</span>
+<span class="font-bold text-primary">Incipiente</span>
+</div>
+<div class="h-1 bg-surface-container relative rounded-full">
+<div class="absolute left-0 top-0 h-full w-[30%] bg-primary"></div>
+<div class="absolute left-[30%] top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full shadow-sm cursor-pointer"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bach Flowers Recommendation -->
+<div>
+<h3 class="font-label-caps text-label-caps text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">psychiatry</span>
+                            Sugestão Florais de Bach
+                        </h3>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded group cursor-pointer hover:bg-secondary-container transition-colors">
+<span class="text-sm font-medium">Aspen</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-wider">Medos Indefinidos</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded group cursor-pointer hover:bg-secondary-container transition-colors">
+<span class="text-sm font-medium">Rock Rose</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-wider">Pânico / Terror</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded group cursor-pointer hover:bg-secondary-container transition-colors">
+<span class="text-sm font-medium">Star of Bethlehem</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-wider">Trauma / Choque</span>
+</div>
+</div>
+</div>
+<!-- Visual Mood Card -->
+<div class="rounded-xl overflow-hidden relative h-48 mt-8 border border-outline-variant/30">
+<img alt="Clinical Serenity Visual" class="w-full h-full object-cover grayscale opacity-40" data-alt="A serene, minimalist still life featuring a single green plant in a ceramic vase against a textured off-white wall. The lighting is soft and diffused, casting gentle shadows that evoke a sense of mental clarity and peace. The visual style is high-end clinical photography with a palette of deep teal accents and warm parchment tones, creating a professional and therapeutic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNAOqRYs_kpNKoQ9_tKj9JWDfeih5Tnl1uUPF9Db5KHLThb5sOnZryrE6G-_G8B8VMSWV87bMIwHfbUdFm2d_drjBHT63BmuxKEItPQS8T2X3NdFTyEdHlXzWXWRKNiXRIMrT7bnr7YZ4_di-uU4izMDuDggT3KcveRpM2K-kCvzmtOS-3_a6wN7Mjtfp8eHrIMlBbBlnFZ_Y0KCx1eZKybiknieLDYIivLDXWs_-CNnswTzfX1nLGC_0oFi-BN4r-dV-dyNa7JQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-[11px] font-label-caps leading-relaxed text-on-surface-variant italic">"A cura é um processo de desvelamento silencioso."</p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- Floating Quick Action Button (FAB Override) -->
+<button class="fixed bottom-10 right-[25rem] bg-secondary text-on-secondary w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">mic</span>
+</button>
+</main>
+</body></html>
