@@ -1,380 +1,367 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="light" lang="pt-BR"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
-    body {
-      font-family: 'Manrope', sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    .custom-scrollbar::-webkit-scrollbar {
-      width: 4px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: #c1c8c6;
-      border-radius: 10px;
-    }
-  </style>
 <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "surface-tint": "#476461",
-            "tertiary-fixed-dim": "#e9bdad",
-            "tertiary-container": "#66463a",
-            "surface-container-low": "#f4f3f2",
-            "background": "#faf9f8",
-            "surface-container-lowest": "#ffffff",
-            "primary": "#203c3a",
-            "on-tertiary-fixed-variant": "#5e3f34",
-            "tertiary": "#4d3025",
-            "inverse-on-surface": "#f1f0ef",
-            "surface-variant": "#e3e2e1",
-            "on-primary-container": "#a7c6c3",
-            "on-primary-fixed": "#02201e",
-            "secondary-fixed": "#ece5a4",
-            "on-secondary-fixed-variant": "#4c4817",
-            "inverse-surface": "#2f3130",
-            "outline": "#717877",
-            "secondary-container": "#e9e2a1",
-            "outline-variant": "#c1c8c6",
-            "on-secondary-container": "#696430",
-            "on-secondary-fixed": "#1f1c00",
-            "secondary": "#64602c",
-            "on-primary-fixed-variant": "#304c4a",
-            "on-primary": "#ffffff",
-            "inverse-primary": "#aecdca",
-            "surface": "#faf9f8",
-            "primary-container": "#375351",
-            "primary-fixed": "#cae9e6",
-            "on-error": "#ffffff",
-            "primary-fixed-dim": "#aecdca",
-            "surface-container-high": "#e9e8e7",
-            "error-container": "#ffdad6",
-            "surface-container": "#eeeeed",
-            "on-secondary": "#ffffff",
-            "on-error-container": "#93000a",
-            "tertiary-fixed": "#ffdbce",
-            "on-tertiary": "#ffffff",
-            "on-surface": "#1a1c1c",
-            "surface-bright": "#faf9f8",
-            "on-surface-variant": "#414847",
-            "on-tertiary-fixed": "#2d150c",
-            "on-background": "#1a1c1c",
-            "surface-dim": "#dadad9",
-            "surface-container-highest": "#e3e2e1",
-            "on-tertiary-container": "#e1b5a6",
-            "error": "#ba1a1a",
-            "secondary-fixed-dim": "#cfc98a"
-          },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "spacing": {
-            "gutter": "24px",
-            "container-max": "1120px",
-            "unit": "8px",
-            "margin-mobile": "16px",
-            "section-padding": "80px"
-          },
-          "fontFamily": {
-            "headline-md": ["EB Garamond"],
-            "headline-lg": ["EB Garamond"],
-            "headline-sm": ["EB Garamond"],
-            "body-md": ["Manrope"],
-            "body-lg": ["Manrope"],
-            "label-caps": ["Manrope"]
-          },
-          "fontSize": {
-            "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
-            "headline-lg": ["48px", {"lineHeight": "1.1", "fontWeight": "500"}],
-            "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
-            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-            "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "600"}]
-          }
-        },
-      },
-    }
-  </script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdbce",
+                        "on-surface-variant": "#414847",
+                        "secondary": "#64602c",
+                        "inverse-surface": "#2f3130",
+                        "inverse-primary": "#aecdca",
+                        "surface-tint": "#476461",
+                        "surface-container-highest": "#e3e2e1",
+                        "tertiary-fixed-dim": "#e9bdad",
+                        "primary": "#203c3a",
+                        "primary-fixed-dim": "#aecdca",
+                        "outline": "#717877",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#faf9f8",
+                        "primary-fixed": "#cae9e6",
+                        "surface-container-high": "#e9e8e7",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#02201e",
+                        "on-primary-fixed-variant": "#304c4a",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f4f3f2",
+                        "on-secondary-fixed": "#1f1c00",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#2d150c",
+                        "on-secondary-container": "#696430",
+                        "primary-container": "#375351",
+                        "secondary-container": "#e9e2a1",
+                        "surface-bright": "#faf9f8",
+                        "on-primary-container": "#a7c6c3",
+                        "on-error": "#ffffff",
+                        "surface-container": "#eeeeed",
+                        "tertiary": "#4d3025",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#66463a",
+                        "on-background": "#1a1c1c",
+                        "outline-variant": "#c1c8c6",
+                        "on-surface": "#1a1c1c",
+                        "secondary-fixed-dim": "#cfc98a",
+                        "surface-variant": "#e3e2e1",
+                        "background": "#faf9f8",
+                        "surface-dim": "#dadad9",
+                        "on-tertiary-fixed-variant": "#5e3f34",
+                        "secondary-fixed": "#ece5a4",
+                        "inverse-on-surface": "#f1f0ef",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#4c4817",
+                        "on-tertiary-container": "#e1b5a6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "section-padding": "80px",
+                        "unit": "8px",
+                        "container-max": "1120px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "headline-sm": ["EB Garamond"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.1", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #faf9f8;
+        }
+        .canvas-container {
+            margin-left: 16rem;
+            margin-top: 4rem;
+            min-height: calc(100vh - 4rem);
+        }
+        input:focus {
+            outline: none;
+            border-bottom-color: #203c3a !important;
+        }
+    </style>
 </head>
-<body class="bg-background text-on-surface">
-<!-- SideNavBar Anchor -->
-<aside class="bg-surface-container dark:bg-surface-container-high h-full w-64 fixed left-0 top-0 flex flex-col h-full py-lg shadow-sm">
-<div class="px-6 mb-8">
+<body class="font-body-md text-on-surface selection:bg-secondary-container">
+<!-- SideNavBar -->
+<aside class="h-full w-64 fixed left-0 top-0 bg-surface-container dark:bg-surface-container-high flex flex-col h-full py-lg shadow-sm z-[60]">
+<div class="px-gutter mb-10">
 <h1 class="text-headline-md font-headline-md text-primary dark:text-primary-fixed-dim">Clinical Portal</h1>
-<p class="text-label-caps text-on-surface-variant mt-1">Dr. Julian Vance</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Dr. Julian Vance</p>
 </div>
-<nav class="flex-1">
-<ul class="space-y-1">
-<li>
-<a class="flex items-center px-6 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-dim transition-all active:scale-95 duration-200" href="#">
-<span class="material-symbols-outlined mr-3">dashboard</span>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center px-gutter py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-dim transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="dashboard">dashboard</span>
 <span class="font-label-md text-label-md">Dashboard</span>
 </a>
-</li>
-<li>
-<a class="flex items-center px-6 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-dim transition-all active:scale-95 duration-200" href="#">
-<span class="material-symbols-outlined mr-3">person_search</span>
+<a class="flex items-center px-gutter py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-dim transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="person_search">person_search</span>
 <span class="font-label-md text-label-md">Patients</span>
 </a>
-</li>
-<li>
-<!-- Active State: Active Session -->
-<a class="flex items-center px-6 py-3 text-primary dark:text-primary-fixed font-bold bg-secondary-container dark:bg-on-secondary-fixed-variant rounded-l-full ml-4 active:scale-95 duration-200 transition-all" href="#">
-<span class="material-symbols-outlined mr-3">psychology</span>
+<a class="flex items-center px-gutter py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-dim transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="psychology">psychology</span>
 <span class="font-label-md text-label-md">Active Session</span>
 </a>
-</li>
-<li>
-<a class="flex items-center px-6 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-dim transition-all active:scale-95 duration-200" href="#">
-<span class="material-symbols-outlined mr-3">description</span>
+<a class="flex items-center px-gutter py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-dim transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="description">description</span>
 <span class="font-label-md text-label-md">Reports</span>
 </a>
-</li>
-<li>
-<a class="flex items-center px-6 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-dim transition-all active:scale-95 duration-200" href="#">
-<span class="material-symbols-outlined mr-3">payments</span>
+<a class="flex items-center text-primary dark:text-primary-fixed font-bold bg-secondary-container dark:bg-on-secondary-fixed-variant rounded-l-full ml-4 px-gutter py-3 transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="payments">payments</span>
 <span class="font-label-md text-label-md">Finances</span>
 </a>
-</li>
-</ul>
 </nav>
-<div class="px-6 pb-6">
-<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-medium transition-all active:scale-95 duration-200">
-        Start Session
-      </button>
-<div class="mt-6 space-y-2">
-<a class="flex items-center text-on-surface-variant text-label-md hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined mr-2 text-sm">settings</span> Settings
-        </a>
-<a class="flex items-center text-on-surface-variant text-label-md hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined mr-2 text-sm">help_outline</span> Support
-        </a>
+<div class="px-gutter pt-6 border-t border-outline-variant space-y-1">
+<a class="flex items-center py-2 text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="settings">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+<a class="flex items-center py-2 text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="help_outline">help_outline</span>
+<span class="font-label-md text-label-md">Support</span>
+</a>
+<div class="mt-6">
+<button class="w-full bg-primary text-on-primary py-3 rounded shadow-sm font-label-caps text-label-caps active:scale-[0.98] transition-transform">
+                    Start Session
+                </button>
 </div>
 </div>
 </aside>
-<!-- TopAppBar Anchor -->
+<!-- TopAppBar -->
 <header class="fixed top-0 right-0 w-[calc(100%-16rem)] z-50 bg-surface/80 dark:bg-surface-container-lowest/80 backdrop-blur-md border-b border-outline-variant">
 <div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
 <div class="flex items-center gap-8">
 <span class="font-headline-md text-headline-md font-semibold text-primary dark:text-primary-fixed">TherapySync Pro</span>
-<div class="hidden md:flex gap-6">
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Recent Patients</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Calendar</a>
-</div>
+<nav class="hidden md:flex gap-6">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Recent Patients</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Calendar</a>
+</nav>
 </div>
 <div class="flex items-center gap-4">
-<div class="flex gap-2">
-<button class="p-2 text-on-surface-variant hover:text-primary transition-colors focus-within:ring-2 ring-primary/20">
-<span class="material-symbols-outlined">notifications</span>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
 </button>
-<button class="p-2 text-on-surface-variant hover:text-primary transition-colors focus-within:ring-2 ring-primary/20">
-<span class="material-symbols-outlined">calendar_today</span>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 </button>
-</div>
-<button class="bg-primary text-on-primary px-4 py-1.5 rounded-lg font-body-md text-body-md hover:bg-primary-container hover:text-on-primary-container transition-all">New Patient</button>
-<img alt="User profile" class="w-8 h-8 rounded-full border border-outline-variant shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8-X1LJsF_dTFuz2ERW6EZl0QawAqkVFEHHK1yplBHGDVv0Ce-P589B02rgGL5Ja3Sskse1VOiwFhAi5l6_shzdWojHLmBc6eCI2ma626vmyHUL5koYnRD30LG9IkRliGhx-REFBIh3JTbCbkgBaoMSgFxpBe2s1ysh9rSeoO_2YeY3e6fEiXA8TeZPhunBegbYBd0bwOI5iwESinhHQKLrWzwXgkV-MbPJ16pOiRnm4yvntSmFFps9Qu1eOzhxqWyLwH4TwE-mg"/>
+<div class="h-8 w-px bg-outline-variant mx-2"></div>
+<button class="px-4 py-2 border border-secondary text-secondary font-label-caps text-label-caps hover:bg-secondary-container transition-colors rounded">
+                    New Patient
+                </button>
+<img alt="User profile" class="w-10 h-10 rounded-full object-cover border border-outline-variant" data-alt="A professional headshot of a mature male psychotherapist with a kind expression, wearing a tailored navy blazer. The background is a soft-focus clinical setting with warm, ambient lighting that complements the premium off-white and teal color scheme of the UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQt-tyqkq4PUkdKh_c6aQkXtUdBIf8_aKHvHAu_NcsaA1P7LCkHaq7xQPmzV_zNEanH3VPvjMbtstHUJ1nW2uMRt766kdEUrv4GwIsOrF_bf7zvVqprBgP0k4x1tceKCooyFlddabHIAceuDjBaHoTSluM8yoBue1RFBIqlgSoUbu39VGKYGODPQzTQXrtfz0c9rW0CNfE2B0zdrKNxZhDDjwiLwUHQ6clQDNQjhHfVWxubohXspeR6KUadJ7RvnRSrZeHMxzeVA"/>
 </div>
 </div>
 </header>
-<!-- Main Canvas -->
-<main class="ml-64 mt-16 p-gutter min-h-screen">
-<div class="max-w-container-max mx-auto">
-<!-- Live Session Status Header -->
-<section class="mb-12 bg-surface-container-lowest p-8 rounded-xl flex justify-between items-center shadow-sm">
-<div class="flex items-center gap-6">
-<div class="relative">
-<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary">
-<img alt="Patient Image" class="w-full h-full object-cover" data-alt="A close-up portrait of a serene woman in her late 30s with eyes closed, embodying a state of deep relaxation. The lighting is soft and ethereal, with warm golden tones reflecting a peaceful clinical environment. The background is blurred into soft, off-white and teal tones, maintaining a minimalist and premium aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8LXDbpbohtNuqnIFupC902Hk2d6Fa0U2IvOh0rD7PXWWFhB2BUJyYPWt2ytpaS97HY6ssX3z-LURBL5cb0tILo5g3YpqWzH_x7UehdoqFlOka30Fu7EkUwDDLnsW16lYFMVNUUxUi1mKHQvhC9WKDV1qiPTVCtpxaq09NJpMvDWFnJiTO8yHs45et6B2Z-sFDANVSZh1J-95RZTD-KKlT2UIJvzywm8YpfDhcaN-lKdG5gQZ77NZ3Jb-SPYE2aJ_roJ1364lygQ"/>
-</div>
-<span class="absolute bottom-0 right-0 w-4 h-4 bg-error border-2 border-surface-container-lowest rounded-full"></span>
-</div>
+<!-- Main Content Canvas -->
+<main class="canvas-container p-gutter">
+<div class="max-w-container-max mx-auto py-section-padding/2">
+<header class="mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Configurações de Valores</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Gerencie a estrutura financeira da sua prática clínica com precisão e serenidade.</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- 1. Valor Base da Sessão Individual -->
+<section class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
 <div>
-<h2 class="text-headline-sm font-headline-sm text-primary">Live Session: Elena Rossi</h2>
-<p class="text-label-caps text-on-surface-variant tracking-widest mt-1 uppercase">Case #7712 • Clinical Hypnosis • Room 402</p>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="payments">payments</span>
+<h3 class="font-headline-sm text-headline-sm">Sessão Individual</h3>
+</div>
+<p class="font-body-md text-on-surface-variant mb-8">Defina o valor padrão para sessões avulsas de 50 minutos.</p>
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-1">VALOR BASE (BRL)</label>
+<div class="flex items-baseline gap-2 border-b border-outline-variant py-2">
+<span class="text-headline-md text-primary/50">R$</span>
+<input class="bg-transparent border-none p-0 text-headline-md text-primary font-headline-md w-full focus:ring-0" type="text" value="350,00"/>
 </div>
 </div>
-<div class="flex items-center gap-10">
-<div class="text-right">
-<p class="text-label-caps text-outline mb-1 uppercase">Session Timer</p>
-<p class="text-headline-md font-headline-md text-primary tabular-nums">00:24:18</p>
 </div>
-<button class="bg-error text-on-error px-8 py-3 rounded-lg font-label-caps tracking-widest uppercase hover:bg-on-error-container transition-all active:scale-95">
-            End Session
-          </button>
-</div>
+<button class="mt-8 text-primary font-label-caps text-label-caps flex items-center gap-2 hover:opacity-70 transition-opacity">
+                        ATUALIZAR VALOR <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
 </section>
-<div class="grid grid-cols-12 gap-gutter">
-<!-- Left Column: Scripts Library -->
-<div class="col-span-12 lg:col-span-3 space-y-gutter">
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30 h-[calc(100vh-280px)] flex flex-col">
-<div class="mb-6">
-<h3 class="text-label-caps text-primary mb-4 uppercase">Script Library</h3>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
-<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border-none focus:ring-1 ring-primary/30 rounded-lg text-body-md" placeholder="Search Scripts..." type="text"/>
+<!-- 2. Pacotes de Sessões -->
+<section class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-center mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="inventory_2">inventory_2</span>
+<h3 class="font-headline-sm text-headline-sm">Pacotes de Sessões</h3>
+</div>
+<button class="font-label-caps text-label-caps text-secondary border border-secondary px-4 py-2 hover:bg-secondary-container transition-all">NOVO PACOTE</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Pacote Card -->
+<div class="p-6 bg-surface-container-low border border-outline-variant/20 rounded-lg group hover:border-primary/30 transition-colors">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-body-lg font-semibold text-primary">Pacote Mensal <span class="material-symbols-outlined text-sm ml-1 align-middle opacity-50 group-hover:opacity-100 transition-opacity" data-icon="edit">edit</span></h4>
+<div class="flex items-center gap-1 bg-secondary-container text-on-secondary-container text-[10px] px-2 py-0.5 rounded font-bold"><input class="bg-transparent border-none p-0 w-4 text-center focus:ring-0 text-[10px] font-bold underline decoration-dotted" type="text" value="10"/><span>% OFF</span></div>
+</div>
+<p class="text-sm text-on-surface-variant mb-4">4 sessões mensais fixas com pagamento antecipado.</p>
+<div class="flex items-baseline gap-1"><span class="text-xs text-on-surface-variant">Total:</span><div class="flex items-baseline gap-0.5 border-b border-outline-variant group-hover:border-primary/50 transition-colors"><span class="text-lg font-bold text-primary/70">R$</span><input class="bg-transparent border-none p-0 text-lg font-bold text-primary w-24 focus:ring-0" type="text" value="1.260,00"/></div><span class="text-xs text-on-surface-variant ml-auto">R$ 315/sessão</span></div>
+</div>
+<!-- Pacote Card -->
+<div class="p-6 bg-surface-container-low border border-outline-variant/20 rounded-lg group hover:border-primary/30 transition-colors">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-body-lg font-semibold text-primary">Intensivo Quinzenal <span class="material-symbols-outlined text-sm ml-1 align-middle opacity-50 group-hover:opacity-100 transition-opacity" data-icon="edit">edit</span></h4>
+<div class="flex items-center gap-1 bg-secondary-container text-on-secondary-container text-[10px] px-2 py-0.5 rounded font-bold"><input class="bg-transparent border-none p-0 w-4 text-center focus:ring-0 text-[10px] font-bold underline decoration-dotted" type="text" value="15"/><span>% OFF</span></div>
+</div>
+<p class="text-sm text-on-surface-variant mb-4">8 sessões para tratamentos de alta frequência.</p>
+<div class="flex items-baseline gap-1"><span class="text-xs text-on-surface-variant">Total:</span><div class="flex items-baseline gap-0.5 border-b border-outline-variant group-hover:border-primary/50 transition-colors"><span class="text-lg font-bold text-primary/70">R$</span><input class="bg-transparent border-none p-0 text-lg font-bold text-primary w-24 focus:ring-0" type="text" value="2.380,00"/></div><span class="text-xs text-on-surface-variant ml-auto">R$ 297/sessão</span></div>
 </div>
 </div>
-<div class="flex-1 overflow-y-auto custom-scrollbar space-y-3">
-<!-- Script Cards -->
-<div class="p-4 bg-primary text-on-primary rounded-lg cursor-pointer">
-<h4 class="font-medium text-body-md">Progressive Relaxation</h4>
-<p class="text-xs opacity-70 mt-1">Induction • 12 mins</p>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex justify-end"><button class="bg-primary text-on-primary px-6 py-2 rounded shadow-sm font-label-caps text-label-caps active:scale-[0.98] transition-transform">Salvar Alterações</button></div></section>
+<!-- 3. Reajuste Anual Automático -->
+<section class="md:col-span-5 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="update">update</span>
+<h3 class="font-headline-sm text-headline-sm">Reajuste Automático</h3>
 </div>
-<div class="p-4 bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all rounded-lg cursor-pointer">
-<h4 class="font-medium text-body-md">Stress Dissolution</h4>
-<p class="text-xs text-on-surface-variant mt-1">Therapeutic • 20 mins</p>
-</div>
-<div class="p-4 bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all rounded-lg cursor-pointer">
-<h4 class="font-medium text-body-md">Self-Esteem Anchor</h4>
-<p class="text-xs text-on-surface-variant mt-1">Post-Hypnotic • 15 mins</p>
-</div>
-<div class="p-4 bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all rounded-lg cursor-pointer">
-<h4 class="font-medium text-body-md">Somatic Awareness</h4>
-<p class="text-xs text-on-surface-variant mt-1">Deep Trance • 25 mins</p>
-</div>
-<div class="p-4 bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all rounded-lg cursor-pointer">
-<h4 class="font-medium text-body-md">Public Speaking Calm</h4>
-<p class="text-xs text-on-surface-variant mt-1">Cognitive Reframing • 18 mins</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Center Column: Script Viewer & Notes -->
-<div class="col-span-12 lg:col-span-6 space-y-gutter">
-<!-- Active Script View -->
-<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/20 relative">
-<div class="absolute top-6 right-6 flex gap-2">
-<button class="p-2 text-outline hover:text-primary transition-colors"><span class="material-symbols-outlined">text_increase</span></button>
-<button class="p-2 text-outline hover:text-primary transition-colors"><span class="material-symbols-outlined">print</span></button>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-primary mb-8 border-b border-outline-variant pb-4">Progressive Relaxation</h3>
-<div class="font-headline-sm text-on-surface-variant leading-relaxed max-h-[400px] overflow-y-auto custom-scrollbar pr-4 italic">
-              "Now, I want you to focus all your attention on your breathing. Notice the gentle rise and fall of your chest. With every breath out, feel yourself sinking deeper into the chair... <span class="bg-secondary-container/50 px-1 text-on-surface">Pause for 5 seconds</span> ... Imagine a soft light beginning at the crown of your head, washing away any tension, moving down to your eyelids, letting them become heavy, so heavy they feel closed forever..."
-            </div>
-</div>
-<!-- Session Notes -->
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/20">
-<h3 class="text-label-caps text-primary mb-4 uppercase">Live Session Notes</h3>
-<textarea class="w-full min-h-[180px] p-4 bg-surface/50 border border-outline-variant/30 focus:ring-1 ring-primary/20 rounded-lg text-body-md" placeholder="Type clinical observations, triggers, or specific phrasing used here..."></textarea>
-<div class="flex justify-between mt-4">
-<div class="flex gap-2">
-<button class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs rounded-full">#RapidInduction</button>
-<button class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs rounded-full">#VisualTrigger</button>
-</div>
-<button class="text-primary font-medium text-sm flex items-center hover:underline">
-<span class="material-symbols-outlined mr-1 text-base">save</span> Autosaved 14:42
-              </button>
-</div>
-</div>
-</div>
-<!-- Right Column: Indicators & Sound -->
-<div class="col-span-12 lg:col-span-3 space-y-gutter">
-<!-- Technical Indicators -->
-<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/20 shadow-sm">
-<h3 class="text-label-caps text-primary mb-6 uppercase">Hypnosis Indicators</h3>
-<div class="space-y-8">
+<div class="space-y-6">
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded">
 <div>
-<div class="flex justify-between mb-2">
-<label class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Depth of Trance</label>
-<span class="text-primary font-bold text-xs uppercase">Somnambulism</span>
+<p class="font-body-md font-medium text-primary">Status do Reajuste</p>
+<p class="text-xs text-on-surface-variant">Próximo: 01 de Janeiro, 2025</p>
 </div>
-<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary" style="width: 82%"></div>
-</div>
-<div class="flex justify-between mt-1 text-[10px] text-outline uppercase">
-<span>Light</span>
-<span>Deep</span>
+<div class="w-12 h-6 bg-primary rounded-full relative flex items-center px-1">
+<div class="w-4 h-4 bg-white rounded-full ml-auto"></div>
 </div>
 </div>
+<div class="grid grid-cols-2 gap-4">
 <div>
-<label class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider block mb-3">Physiological Signs</label>
-<div class="space-y-3">
-<div class="flex items-center justify-between p-2 bg-surface rounded border border-outline-variant/20">
-<span class="text-xs">Breathing Rhythm</span>
-<span class="flex gap-1">
-<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
-</span>
-</div>
-<div class="flex items-center justify-between p-2 bg-surface rounded border border-outline-variant/20">
-<span class="text-xs">REM Activity</span>
-<span class="text-[10px] font-bold text-primary uppercase">High</span>
-</div>
-<div class="flex items-center justify-between p-2 bg-surface rounded border border-outline-variant/20">
-<span class="text-xs">Muscle Tonus</span>
-<span class="text-[10px] font-bold text-outline uppercase">Faccid</span>
-</div>
-</div>
-</div>
-<div>
-<label class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider block mb-2">Induction Method</label>
-<select class="w-full text-xs bg-surface border-outline-variant rounded-lg p-2 focus:ring-primary/20">
-<option>Braid's Technique</option>
-<option>Elman Induction</option>
-<option>Ericksonian Indirect</option>
-<option selected="">Rapid Hand Drop</option>
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2">ÍNDICE BASE</label>
+<select class="w-full bg-transparent border-b border-outline-variant py-2 focus:ring-0 font-body-md">
+<option>IPCA (IBGE)</option>
+<option>IGP-M</option>
+<option>Fixado (%)</option>
 </select>
 </div>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2">MARGEM EXTRA</label>
+<div class="flex items-center border-b border-outline-variant py-2">
+<input class="bg-transparent border-none p-0 w-full focus:ring-0 font-body-md" type="text" value="2.0"/>
+<span class="text-on-surface-variant">%</span>
 </div>
 </div>
-<!-- Ambient Audio Controls -->
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30">
-<h3 class="text-label-caps text-primary mb-6 uppercase">Atmospheric Controls</h3>
-<div class="space-y-6">
-<div class="flex items-center justify-between">
+</div>
+<p class="text-xs text-on-surface-variant italic">Os pacientes serão notificados via e-mail com 30 dias de antecedência sobre qualquer alteração.</p>
+</div>
+</section>
+<!-- 4. Gestão de Convênios -->
+<section class="md:col-span-7 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-center mb-8">
 <div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">waves</span>
-<div>
-<p class="text-xs font-bold uppercase">Theta Waves</p>
-<p class="text-[10px] text-outline">6.5 Hz Frequency</p>
+<span class="material-symbols-outlined text-primary" data-icon="handshake">handshake</span>
+<h3 class="font-headline-sm text-headline-sm">Convênios e Parcerias</h3>
+</div>
+<button class="text-primary hover:underline text-sm font-medium">Ver todos</button>
+</div>
+<div class="space-y-4">
+<div class="flex items-center p-4 border border-outline-variant/20 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded bg-tertiary-fixed flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="apartment">apartment</span>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md font-semibold text-primary">Bradesco Saúde</h4>
+<p class="text-xs text-on-surface-variant">Reembolso Integral Assistido</p>
+</div>
+<div class="text-right">
+<p class="font-body-md font-bold text-primary">R$ 280,00</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Valor Acordado</p>
 </div>
 </div>
-<input checked="" class="w-8 h-4 rounded-full bg-primary border-none cursor-pointer" type="checkbox"/>
+<div class="flex items-center p-4 border border-outline-variant/20 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded bg-primary-fixed flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-primary" data-icon="corporate_fare">corporate_fare</span>
 </div>
-<div>
-<div class="flex justify-between text-[10px] text-outline mb-2 uppercase">
-<span>Volume</span>
-<span>45%</span>
+<div class="flex-1">
+<h4 class="font-body-md font-semibold text-primary">Parceria OAB/SP</h4>
+<p class="text-xs text-on-surface-variant">Desconto Profissional Liberal</p>
 </div>
-<input class="w-full h-1 bg-outline-variant appearance-none rounded-full accent-primary" type="range"/>
-</div>
-<div class="grid grid-cols-2 gap-2">
-<button class="flex items-center justify-center gap-2 p-2 bg-surface-container-lowest border border-primary text-primary rounded-lg text-[10px] font-bold uppercase hover:bg-primary hover:text-on-primary transition-all">
-<span class="material-symbols-outlined text-sm">nature</span> Forest
-                </button>
-<button class="flex items-center justify-center gap-2 p-2 bg-primary text-on-primary rounded-lg text-[10px] font-bold uppercase shadow-md">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">water_drop</span> Rainfall
-                </button>
+<div class="text-right">
+<p class="font-body-md font-bold text-primary">R$ 310,00</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Valor Acordado</p>
 </div>
 </div>
 </div>
+<button class="w-full mt-6 py-3 border-dashed border-2 border-outline-variant text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-container hover:border-primary transition-all">
+                        + ADICIONAR NOVA PARCERIA
+                    </button>
+</section>
+<!-- 5. Histórico de Alterações -->
+<section class="md:col-span-12 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="history">history</span>
+<h3 class="font-headline-sm text-headline-sm">Histórico de Alterações</h3>
 </div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-outline-variant">
+<th class="pb-4 font-label-caps text-label-caps text-on-surface-variant">DATA</th>
+<th class="pb-4 font-label-caps text-label-caps text-on-surface-variant">CATEGORIA</th>
+<th class="pb-4 font-label-caps text-label-caps text-on-surface-variant">ALTERAÇÃO</th>
+<th class="pb-4 font-label-caps text-label-caps text-on-surface-variant">RESPONSÁVEL</th>
+<th class="pb-4 font-label-caps text-label-caps text-on-surface-variant text-right">VALOR ANTERIOR / NOVO</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 font-body-md">12 Mai, 2024</td>
+<td class="py-4 font-body-md">Sessão Individual</td>
+<td class="py-4 font-body-md text-on-surface-variant">Reajuste Manual</td>
+<td class="py-4 font-body-md">Dr. Julian Vance</td>
+<td class="py-4 font-body-md text-right font-semibold">R$ 320 → R$ 350</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 font-body-md">02 Jan, 2024</td>
+<td class="py-4 font-body-md">Sistema</td>
+<td class="py-4 font-body-md text-on-surface-variant">Reajuste Anual (IPCA)</td>
+<td class="py-4 font-body-md">Automático</td>
+<td class="py-4 font-body-md text-right font-semibold">R$ 305 → R$ 320</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 font-body-md">15 Out, 2023</td>
+<td class="py-4 font-body-md">Parcerias</td>
+<td class="py-4 font-body-md text-on-surface-variant">Novo Convênio: OAB</td>
+<td class="py-4 font-body-md">Secretaria</td>
+<td class="py-4 font-body-md text-right font-semibold">— → R$ 310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </div>
 </div>
 </main>
-<!-- Floating Help Trigger -->
-<div class="fixed bottom-8 right-8">
-<button class="w-12 h-12 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">psychology_alt</span>
-</button>
-</div>
+<!-- Floating Action Button (FAB) - Suppressed as per context rules for settings -->
 </body></html>
